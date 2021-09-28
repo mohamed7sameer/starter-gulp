@@ -79,8 +79,8 @@ function javaScriptLibs(){
 
 function imgs(){
     console.log("************imgs************")
-    return src('src/assets/assets/imgs/**')
-        .pipe(dest('dist/assets/assets/imgs'))
+    return src('src/assets/imgs/**')
+        .pipe(dest('dist/assets/imgs'))
         .pipe(livereload());
 }
 
