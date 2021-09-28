@@ -109,10 +109,10 @@ function exAll(){
         server()
         fonts2()
         livereload.listen();
-        watch('src/sass/*.sass',series(xSassMini,xPugMini));
+        watch('src/assets/sass/*.sass',series(xSassMini,xPugMini));
         watch(['src/pug/*.pug','src/pug/**/*.pug'], series(xPugMini));
-        watch('src/js/*.js', series(javascriptMini,xPugMini));
-        watch('src/js/libs/*.js', series(javaScriptLibs));
+        watch('src/assets/js/*.js', series(javascriptMini,xPugMini));
+        watch('src/assets/js/libs/*.js', series(javaScriptLibs));
     },3000)
 }
 
